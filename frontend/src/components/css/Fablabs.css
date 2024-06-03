@@ -1,0 +1,90 @@
+.Fablab-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #080612;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.Fab-container {
+  background-color: #080612;
+ 
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column; /* Default to column layout */
+  width: 100%;
+  height: auto; /* Let the content define the height */
+}
+
+/* Larger screens (desktops) */
+@media (min-width: 768px) {
+  .Fab-container {
+    flex-direction: row; /* Change to row layout for larger screens */
+    height: 70vh; /* Adjust height as needed */
+  }
+}
+
+.Fab-text-section {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #080612;
+  margin-right: 0; /* Default to 0 for smaller screens */
+}
+
+/* Larger screens (desktops) */
+@media (min-width: 768px) {
+  .Fab-text-section {
+    margin-right: 3rem; /* Add margin on larger screens */
+  }
+}
+
+.Fab-text-subsection h6 {
+
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.Fab-text-subsection h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.Fab-text-subsection p {
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.Fab-join-button {
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(212,0,0,1) 0%, rgba(48,35,112,1) 90%);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.Fab-join-button:hover {
+  background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3%);
+}
+
+.Fab-image-section {
+  flex: 1;
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1553028826-f4804a6dba3b?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center;
+  background-size: cover;
+  min-height: 300px; /* Ensure image section has a minimum height */
+}
+
+/* Adjust background image for smaller screens */
+@media (max-width: 767px) {
+  .Fab-image-section {
+    min-height: 200px; /* Smaller height for small screens */
+  }
+}

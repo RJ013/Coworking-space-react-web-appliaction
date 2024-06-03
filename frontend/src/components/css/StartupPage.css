@@ -1,0 +1,80 @@
+.startup-container {
+  padding: 20px;
+  background-color: #080612; /* Black background color */
+  overflow: auto;
+  margin: 3rem;
+}
+
+.startup-item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4rem; /* Increase the margin between items */
+}
+
+.startup-item img {
+  width: 50%; /* Image takes up half of the container */
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover; /* Ensures the image is not stretched */
+  transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.startup-details {
+  padding: 50px;
+  width: 50%; /* Text takes up half of the container */
+  color: #fff; /* White font color for readability on black background */
+}
+
+
+
+@media screen and (max-width: 992px) {
+  .startup-details {
+    padding: 30px; /* Adjust padding for medium screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .startup-item {
+    flex-direction: column;
+    margin-bottom: 80px; /* Increase margin between items for mobile */
+  }
+
+  .startup-item:nth-child(even) {
+    flex-direction: column-reverse; /* Reverse the order for even rows */
+  }
+
+  .startup-item img,
+  .startup-details {
+    width: 100%; /* Image and text take up full width on smaller screens */
+    margin-bottom: 40px; /* Increase margin between images and text for mobile */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .startup-container {
+    margin: 1rem; /* Reduce margin for extra small screens */
+  }
+
+  .startup-details {
+    padding: 20px; /* Further adjust padding for extra small screens */
+  }
+
+  .startup-item {
+    margin-bottom: 20px; /* Adjust margin between items */
+  }
+}
+
+/* Animation on hover */
+.startup-item img:hover,
+.startup-item img:active,
+.startup-item img:focus,
+.startup-item img:focus-visible {
+  transform: translateY(-5px); /* Move the image up by 5 pixels on hover or touch */
+}
+.cofounder{
+  margin-bottom: 2.5rem;
+}
+.cofounder1{
+  margin-bottom: 0;
+}

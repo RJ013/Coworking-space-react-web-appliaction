@@ -1,0 +1,790 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.nav {
+  background-color: #080612;
+}
+
+#main {
+  position: relative;
+}
+
+#page1 {
+  height: 100vh;
+  width: 100%;
+  padding-top: 0;
+  margin-top: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  z-index: 10;
+  overflow: hidden; /* Ensure overflow is hidden to contain the video */
+}
+
+#page1 .bg-vid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#page1 h1 {
+  margin-top: 6rem;
+  font-size: 6vw;
+  font-weight: 900;
+  position: relative;
+  width: 100%;
+  
+}
+
+#page1 h1::before {
+  content: "COSPACE SUCCESS";
+  position: absolute;
+  color: #000;
+  top: -5px;
+  left: -5px;
+  -webkit-text-stroke: 1.5px #d40000;
+  z-index: -1;
+}
+
+#page1 h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 20px;
+}
+
+#page1 p {
+  margin-left: 3rem;
+  font-size: 1.2vw;
+  font-weight: 500;
+  width: 80%;
+}
+.bg-video-container {
+  position: relative;
+}
+
+.bg-vid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#page1 .content {
+  position: relative;
+  z-index: 1;
+  color: #fff; /* Add color for content */
+}
+
+.video-heading{
+  color: #ccc;
+}
+
+/***************     Sale Css *************/
+
+.ad-container {
+  background-color: #080612;
+  margin-top: 5rem;
+  padding-top: 2rem;
+  display: flex;
+  width: 100%;
+  height: 70vh; /* Adjust height as needed */
+}
+
+.text-section {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #080612;
+  margin-right: 3rem;
+}
+
+.text-subsection h6 {
+ 
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.text-subsection h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.text-subsection p {
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.join-button {
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(212,0,0,1) 0%, rgba(48,35,112,1) 90% );
+  /* A bright yellow color */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.join-button:hover{
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% );
+}
+.image-section {
+ 
+  flex: 1;
+  position: relative;
+  background: url('https://images.unsplash.com/photo-1604328727766-a151d1045ab4?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center;
+  background-size: cover;
+  
+}
+
+
+
+
+/***************     3rdcomponent Css ************/
+
+
+.container-sale {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  background-color: #080612;
+}
+
+.image-container {
+  margin-right: 50px;
+  flex: 1;
+  max-width: 60%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  flex: 1;
+  max-width: 40%;
+  padding: 20px;
+}
+
+.content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.h2-heading{
+  text-align: left;
+}
+.content p {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.content li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* App.css */
+
+/*** *******  Pricing card ***********/
+/* PricingPlans.css */
+.pricing-container {
+  height: auto;
+  min-height: 100vh;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  background-color: #080612;
+}
+
+.pricing-container h2 {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-size: 28px;
+  margin-bottom: 2rem;
+}
+
+.pricing-plans {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  margin-bottom: 30px;
+}
+
+.pricing-plan {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px; /* Adjusted for uniformity */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  min-height: 450px;
+  max-width: 350px;
+  width: 100%;
+}
+
+.pricing-plan h3, .price, .period {
+  color: #fff; /* Ensuring readability */
+}
+
+.features {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 30px; /* Reduced bottom margin for better space management */
+}
+
+.get-now-btn {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+}
+
+.highlighted {
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Stronger shadow for emphasis */
+}
+
+.highlighted .get-now-btn {
+  background-color: #ffc107;
+  color: #000;
+}
+
+@media (max-width: 1024px) {
+  .pricing-container h2 {
+    font-size: 24px; /* Smaller font for smaller screens */
+  }
+
+  .pricing-plans {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-plan {
+    width: 90%; /* Full width for mobile visibility */
+  }
+}
+
+@media (max-width: 600px) {
+  .pricing-plan {
+    min-height: auto; /* More flexible height */
+    padding: 15px;
+  }
+
+  .pricing-plan h3 {
+    font-size: 18px;
+  }
+
+  .price {
+    font-size: 24px;
+  }
+
+  .period, .features li {
+    font-size: 14px;
+  }
+
+  .get-now-btn, .view-all-link {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 800px) {
+  .content-container > * {
+    width: 100%; /* Full width for single column layout */
+  }
+
+  .left-content, .right-content {
+    padding: 15px;
+    display: block;
+  }
+
+  .left-content > * {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
+/**********  features with orange icon   ***********/
+
+
+
+
+/******** contact us     ***********/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Add responsive CSS for contact container */
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    height: auto;
+    margin-top: 2rem;
+  }
+
+  .contact-text-section {
+    margin-right: 0;
+  }
+
+  .contact-info {
+    justify-content: flex-start;
+  }
+
+  .info-item {
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+
+
+
+
+
+/* Add this media query for smaller screens */
+@media (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  #page1 h1 {
+    font-size: 12vw;
+  }
+
+  #page1 p {
+    font-size: 4vw;
+    width: 80%;
+  }
+
+  .ad-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .text-section {
+    order: 2;
+  }
+
+  .image-section {
+    order: 1;
+    height: 300px;
+  }
+
+  .offer {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -3rem;
+  }
+
+  .container-sale {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .image-container {
+    margin-right: 0;
+    max-width: 100%;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+
+  
+
+  #cards-container {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .service {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjustments for very small screens */
+  #page1 h1 {
+    font-size: 16vw;
+  }
+
+  #page1 h2 {
+    font-size: 24px;
+  }
+
+  .text-subsection h1 {
+    font-size: 1.5em;
+  }
+
+  .offer {
+    padding: 30px;
+  }
+
+  .offer span {
+    font-size: 0.8em;
+  }
+
+  #green-div h4 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .ad-container,
+  .container-sale,
+  #green-div {
+    padding: 20px;
+  }
+
+  .text-subsection h6 {
+    font-size: 14px;
+  }
+
+  .join-button {
+    font-size: 14px;
+  }
+
+  .content h2 {
+    font-size: 20px;
+  }
+
+  .content p,
+  .content li {
+    font-size: 14px;
+  }
+
+  #green-div h4 {
+    font-size: 18px;
+  }
+
+  
+
+ 
+}
+
+/* Adjustments for very small screens */
+@media (max-width: 480px) {
+  .ad-container,
+  .container-sale,
+  #green-div {
+    padding: 10px;
+  }
+
+  .text-subsection h1 {
+    font-size: 1.2em;
+  }
+
+  .text-subsection p {
+    font-size: 14px;
+  }
+
+  .join-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .content h2 {
+    font-size: 18px;
+  }
+
+  .content p,
+  .content li {
+    font-size: 14px;
+  }
+
+  #green-div h4 {
+    font-size: 16px;
+  }
+
+  
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Add responsive CSS */
+
+@media screen and (max-width: 768px) {
+  .ad-container {
+    flex-direction: column-reverse;
+    height: auto;
+    margin-top: 2rem;
+  }
+
+  .text-section {
+    margin-right: 0;
+  }
+
+  .offer {
+    left: auto;
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .offer span {
+    font-size: 0.8em;
+  }
+
+  .mission-section,
+  .vision-section {
+    margin: 20px 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* blog.css */
+
+/* Blog container styles */
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px auto;
+  padding: 20px;
+  padding-bottom: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #080612;
+  max-width: 900px;
+}
+
+/* Blog title styles */
+.blog-title {
+  padding-top: 0;
+  font-size: 2rem;
+  text-align: center;
+  margin: 20px 0;
+  color: #fff; /* Bright yellow for the title */
+}
+
+/* Blog body styles */
+.blog-body {
+  font-size: 1rem;
+  text-align: justify;
+  margin: 20px 0;
+  padding: 0 20px;
+  color: #ccc; /* Light gray for the text */
+  line-height: 1.6;
+  max-width: 800px;
+}
+
+/* Blog image styles */
+.blog-image {
+  width: 100%;
+  height: auto; /* Ensures the image maintains its aspect ratio */
+  border-radius: 10px;
+  max-width: 800px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to the image */
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+  .blog-title {
+    font-size: 2.5rem;
+    margin: 30px 0;
+  }
+
+  .blog-body {
+    font-size: 1.2rem;
+    padding: 0 40px;
+  }
+}
+
+/* Small screens */
+@media (max-width: 767px) {
+  .blog-container {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .blog-title {
+    font-size: 1.8rem;
+  }
+
+  .blog-body {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+
+  .blog-image {
+    margin-bottom: 15px;
+  }
+}

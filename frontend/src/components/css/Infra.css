@@ -1,0 +1,221 @@
+.amenities-image{
+     height: 80vh;
+}
+.amenities{
+  background-color: #080612;
+}
+.infrastructure {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.infrastructure-grid {
+  margin-top: 3rem ;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.infrastructure-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+ 
+}
+
+.infrastructure-icon {
+  width: 64px;
+  height: 64px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: 0 auto 10px;
+}
+
+.comfy-office {
+  background-image: url('../assets/negotiation.png');
+
+}
+
+.call-answering {
+  background-image: url('path/to/call-answering-icon.svg');
+}
+
+.negotiating {
+  background-image: url('path/to/negotiating-icon.svg');
+}
+
+.conference-room {
+  background-image: url('path/to/conference-room-icon.svg');
+}
+
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .infrastructure-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .infrastructure-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 768px) {
+    .amenities-image{
+        height: auto;
+   }
+  }
+
+.office-showcase {
+    margin: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .image-container {
+    flex: 1;
+    max-width: 500px;
+    margin-right: 20px;
+  }
+  
+  .office-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .content {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+
+  
+  .amenities-btn {
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(212,0,0,1) 0%, rgba(48,35,112,1) 90% );
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .amenities-btn:hover{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% );
+  }
+  @media (max-width: 768px) {
+    .office-showcase {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .image-container {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .image-container,
+    .content {
+      max-width: 100%;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    .about-btn {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  .amenitiesh2{
+    color: #fff;
+  }
+
+
+
+
+
+
+
+
+  #cards-container {
+    /* background-color: red; */
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .service {
+    flex: 1;
+    max-width: 250px;
+    margin: 10px;
+    text-align: center;
+    /* background-color: #fff;*/
+    padding: 20px;
+    border-radius: 8px;
+    /*  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);*/
+  }
+  
+  .service-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+    display: inline-block;
+    animation: bounce 2s infinite;
+  }
+  
+  .service-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .service-desc {
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  @keyframes bounce {
+  
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+  
+    40% {
+      transform: translateY(-20px);
+    }
+  
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  

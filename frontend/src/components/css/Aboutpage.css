@@ -1,0 +1,223 @@
+.about-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #080612;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.about-container,
+.vision-container,
+.mission-container {
+  background-color: #080612;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column; /* Default to column layout */
+  width: 100%;
+  height: auto; /* Let the content define the height */
+}
+
+/* Larger screens (desktops) */
+@media (min-width: 768px) {
+  .about-container,
+  .vision-container,
+  .mission-container {
+    flex-direction: row; /* Change to row layout for larger screens */
+    height: 70vh; /* Adjust height as needed */
+  }
+}
+
+.about-text-section,
+.vision-text-section,
+.mission-text-section {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #080612;
+  margin-right: 0; /* Default to 0 for smaller screens */
+}
+
+/* Larger screens (desktops) */
+@media (min-width: 768px) {
+  .about-text-section,
+  .vision-text-section,
+  .mission-text-section {
+    margin-right: 0; /* Remove margin for side-by-side layout */
+  }
+}
+
+.about-text-subsection h6,
+.vision-text-subsection h6,
+.mission-text-subsection h6 {
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+
+.vision-text-subsection h1,
+.mission-text-subsection h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-text-subsection p,
+.vision-text-subsection p,
+.mission-text-subsection p {
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.about-join-button,
+.vision-join-button,
+.mission-join-button {
+  background-color: #FFCD00; /* A bright yellow color */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.about-image-section,
+.vision-image-section,
+.mission-image-section {
+  flex: 1;
+  position: relative;
+  background-size: cover;
+  min-height: 300px; /* Ensure image section has a minimum height */
+  background-position: center; /* Center the image */
+}
+
+/* Background images for different sections */
+.about-image-section {
+  background: url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center;
+}
+
+.vision-image-section {
+  background: url('https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center;
+}
+
+.mission-image-section {
+  background: url('https://images.unsplash.com/39/lIZrwvbeRuuzqOoWJUEn_Photoaday_CSD%20%281%20of%201%29-5.jpg?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center;
+}
+
+/* Adjust background image for smaller screens */
+@media (max-width: 767px) {
+  .about-image-section,
+  .vision-image-section,
+  .mission-image-section {
+    min-height: 200px; /* Smaller height for small screens */
+    background-size: contain; /* Ensure the entire image fits within the container */
+  }
+}
+
+.mission-section,
+.vision-section {
+  max-width: 800px;
+  margin: 40px 0;
+  text-align: center;
+}
+
+.directors-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #080612;
+}
+
+.directors-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.director-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* Default to column layout */
+  margin-bottom: 20px;
+}
+
+.director-item.image-left,
+.director-item.image-right {
+  flex-direction: column; /* Default to column layout for smaller screens */
+}
+
+/* Larger screens (desktops) */
+@media (min-width: 768px) {
+  .director-item.image-left {
+    flex-direction: row; /* Row layout for larger screens */
+  }
+
+  .director-item.image-right {
+    flex-direction: row-reverse; /* Row-reverse layout for larger screens */
+  }
+}
+
+.director-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px; /* Add margin below image for smaller screens */
+  object-fit: cover; /* Ensure the image covers the entire area without distortion */
+}
+
+/* Larger screens (desktops) */
+@media (min-width: 768px) {
+  .director-image {
+    margin: 0 20px; /* Margin on sides for larger screens */
+    margin-bottom: 0; /* Remove bottom margin for larger screens */
+  }
+}
+
+.director-info {
+  flex: 1;
+  text-align: center; /* Center text for smaller screens */
+}
+
+/* Larger screens (desktops) */
+@media (min-width: 768px) {
+  .director-info {
+    text-align: left; /* Left-align text for larger screens */
+  }
+}
+
+.director-info p {
+  color: white;
+}
+
+.dicr {
+  font-weight: 600;
+  color: #fff;
+  font-size: 2em;
+}
+
+/* Adjusting about section image to be on the right with 50% width */
+@media (min-width: 768px) {
+  .about-container {
+    flex-direction: row; /* Row layout for side-by-side alignment */
+  }
+  
+  .about-text-section,
+  .about-image-section {
+    flex: 1 1 50%; /* Ensure each occupies 50% of the screen */
+  }
+  
+  .about-image-section {
+    background-size: cover; /* Ensure the image covers its container */
+    background-position: center; /* Center the image */
+  }
+}
+.about-text-subsection h1{
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: left;
+}

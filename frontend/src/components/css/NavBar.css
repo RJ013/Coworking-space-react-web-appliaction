@@ -1,0 +1,27 @@
+.nav-link {
+    position: relative;
+    color: #fff;
+    transition: color 0.3s; /* Smooth transition for color change */
+  }
+  
+  .nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Position the underline below the text */
+    left: 0;
+    width: 0; /* Initially set width to 0 */
+    height: 2px; /* Height of the underline */
+    background-color: #d40000; /* Color of the underline */
+    transition: width 0.3s; /* Smooth transition for width change */
+  }
+  
+  .nav-link:hover::before {
+    width: 100%; /* Expand the underline to full width on hover */
+  }
+  
+  .nav-link:hover {
+    color: #fff; /* Change text color on hover */
+  }
+  .logo-img{
+    margin-right: 1rem;
+  }
